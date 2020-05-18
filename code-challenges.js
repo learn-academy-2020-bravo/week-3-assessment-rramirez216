@@ -106,3 +106,7 @@ const accumulatingSum = (array) => {
 }
 
 console.log(accumulateSum(numbersToAdd1));
+
+
+
+// didn't get to finish managed my time over the weekend horribly
