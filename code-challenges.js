@@ -7,17 +7,14 @@
 //create a function
 const fibonacci = () => {
    // create an array that will hold the numbers
-   let sequence = [1, 1]
-   let newSequence = []
-   let reducer = (accu, current) => accu + current
-   newSequence.push(sequence.reduce(reducer))
-   sequence.concat(newSequence)
-
+   let sequence = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+   
+    // return that array
    return sequence
    
 }
 
-// console.log(fibonacci())
+console.log(fibonacci())
 
 
 
@@ -43,7 +40,7 @@ const oddNumberSorted = (arry) => {
     
 }
  
-// console.log(oddNumberSorted(fullArr2));
+console.log(oddNumberSorted(fullArr2));
 
 
 
@@ -57,7 +54,26 @@ var middleLetters2 = "rhinoceros"
 // Expected output: “oc”
 
 
-// create a function that takes a string as an argument 
+// create a function that takes a string as an argument
+
+
+const extractMiddle = (str) => {
+
+    let position;
+    let length;
+
+    if(str.length % 2 == 1) {
+        position = str.length / 2;
+        length = 1;
+    } else {
+        position = str.length / 2 - 1;
+        length = 2;
+    }
+
+    return str.substring(position, position + length)
+}
+
+console.log(extractMiddle(middleLetters2));
 
 
 
@@ -74,3 +90,15 @@ var numbersToAdd2 = [0, 7, -8, 12]
 // Expected output: [0, 7, -1, 11]
 var numbersToAdd3 = []
 // Expected output: []
+
+// create function that takes in an array
+// 
+
+
+const accumulateSum = (arry) => {
+    return arry.map((value, index) => {
+
+    })
+}
+
+// console.log(accumulateSum(numbersToAdd1));
