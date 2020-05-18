@@ -95,10 +95,14 @@ var numbersToAdd3 = []
 // 
 
 
-const accumulateSum = (arry) => {
-    return arry.map((value, index) => {
-
+const accumulatingSum = (array) => {
+    if (array.length === 0) {
+        return [];
+    }
+    let newArray = array.map(val => val)
+    return newArray.reduce(function(a, b) {
+        return a + b
     })
 }
 
-// console.log(accumulateSum(numbersToAdd1));
+console.log(accumulateSum(numbersToAdd1));
